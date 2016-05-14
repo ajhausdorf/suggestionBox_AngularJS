@@ -1,4 +1,4 @@
-myApp.controller('singleController', [
+myApp.controller('SuggestionController', [
 	'$scope',
 	'$routeParams', 
 	'suggestions', 

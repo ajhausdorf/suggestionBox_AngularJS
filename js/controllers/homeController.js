@@ -1,4 +1,4 @@
-myApp.controller('homeController', [
+myApp.controller('HomeController', [
 	'$scope', 
 	'$routeParams', 
 	'suggestions',
