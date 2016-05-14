@@ -1,7 +1,8 @@
 myApp.controller('homeController', [
 	'$scope', 
-	'suggestions',
 	'$routeParams', 
+	'suggestions',
+	
 
 	function($scope, $routeParams, suggestions) {
 		$scope.posts = suggestions.posts;
@@ -18,6 +19,8 @@ myApp.controller('homeController', [
 
 			//clear input after submit
 			$scope.title = '';
+			//add comments
+			$scope.comments = [];
 		};
 		$scope.upvote = function(post) {
 			post.upvotes += 1;
