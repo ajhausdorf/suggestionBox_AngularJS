@@ -4,8 +4,8 @@ myApp.config(function($routeProvider) {
 		templateUrl: 'views/home.html',
 		controller: 'HomeController'
 	})
-	.when('/single', {
-		templateUrl: 'views/single.html',
+	.when('/suggestion/:id', {
+		templateUrl: 'views/suggestion.html',
 		controller: 'SuggestionController'
 	});
 });
