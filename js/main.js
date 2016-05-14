@@ -1,5 +1,5 @@
 // Module
-var myApp = angular.module('suggestionBox', []);
+var myApp = angular.module('suggestionBox', ['ngRoute']);
 
 
 

@@ -1,4 +1,4 @@
-app.factory('suggestions', [function() {
+myApp.factory('suggestions', [function() {
 	var suggestions = {
 		posts: [
 			{

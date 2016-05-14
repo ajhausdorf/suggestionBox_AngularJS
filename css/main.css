@@ -1,1 +1,9 @@
 /*  Main.css */
+
+.box p {
+	display: inline-block;
+}
+
+.upvotes {
+	margin-left: 25px;
+}

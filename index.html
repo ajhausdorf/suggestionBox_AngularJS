@@ -20,13 +20,7 @@
 		</nav>
 	</head>
 	<body ng-app="suggestionBox" ng-controller="homeController">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					{{helloWorld}}
-				</div>
-			</div>
-		</div>
+		<div ng-view></div>
 	</body>
 
 	<footer>
@@ -34,9 +28,12 @@
 	   	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<!-- load Angular via CDN -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	    <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script-->
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
 	   	<script src="js/main.js"></script>
 	   	<script src="js/controllers/homeController.js"></script>
+	   	<!-- script src="js/controllers/singleController.js"></script -->
+	   	<script src="js/routes/routes.js"></script>
+
 	   	<script src="js/services/box.js"></script>
 	</footer>
 </html>
