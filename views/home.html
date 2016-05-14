@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div ng-repeat="post in posts" class="col-xs-12 col-sm-8 col-sm-offset-2">
+			<div class="box">
+				<p class="title"> {{ post.title }} </p>
+				<p class="upvotes"> {{ post.upvotes }} <span ng-click="upvote(post)">+</span></p>
+			</div>
+		</div> <!-- cols -->
+	</div> <!-- row -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+			<form ng-submit="addSuggestion()">
+				<h3> Add your own suggestion </h3>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Great Ideas Go Here!" ng-model="title"/>
+				</div>
+				<button type="submit" class="btn btn-primary"> Submit </button>
+			</form>
+		</div> <!-- cols -->
+	</div> <!-- row -->
+</div> <!-- container -->
